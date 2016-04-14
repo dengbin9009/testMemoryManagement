@@ -19,4 +19,7 @@ NSString *_db_sss;
 @property (nonatomic, copy) NSString *db_sex;
 @property (nonatomic, assign) CGFloat db_age;
 
+
++ (NSInteger)getCount;
+
 @end

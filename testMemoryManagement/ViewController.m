@@ -19,9 +19,6 @@
 @end
 
 
-//static NSArray *arr = @[@"5",@"6",@"7"];
-
-//static CGFloat gf = 0.0;
 
 @implementation ViewController
 
@@ -77,6 +74,7 @@
  */
 - (void)copyCustomObject{
     DBObject *aPerson = [[DBObject alloc]init];
+    NSLog(@"DBObject getCount:   %ld",(long)[DBObject getCount]);
     aPerson.db_age = 18;
     aPerson.db_sex = @"男";
     aPerson.db_name = @"马云";
@@ -94,6 +92,14 @@
     NSLog(@"aPerson:\n%@",aPerson.db_name);
     NSLog(@"copiedPerson:\n%@",copiedPerson.db_name);
     NSLog(@"newPerson:\n%@",newPerson.db_name);
+    
+    
+    
+    DBObject *aPerson2 = [[DBObject alloc]init];
+    NSLog(@"DBObject getCount:   %ld",(long)[DBObject getCount]);
+    DBObject *aPerson3 = [[DBObject alloc]init];
+    NSLog(@"DBObject getCount:   %ld",(long)[DBObject getCount]);
+    
 }
 
 

@@ -8,6 +8,12 @@
 
 #import "DBObject.h"
 
+static NSInteger count;
+
+
+//static NSArray *arr = @[@"asd",@"as"];
+static NSArray *arr;
+
 @interface DBObject (){
     
 }
@@ -19,6 +25,29 @@
 @end
 
 @implementation DBObject
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        count++;
+    }
+    return self;
+}
+
++ (void)initialize
+{
+    if (self == [DBObject class]) {
+        count = 0;
+        arr = @[@"asd"];
+        arr = @[@"asd",@"as"];
+        NSLog(@"%@",arr);
+    }
+}
+
++ (NSInteger)getCount {
+    return count;
+}
 
 //- (instancetype)copy{
 //    DBObject *newObject = [[DBObject alloc]init];
