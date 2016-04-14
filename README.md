@@ -15,3 +15,6 @@
 
 4、测试copy在自定义对象上的效果（效果为深复制）
    结论：可在DBObject重写copy或者在类DBObject中实现NSCopying协议
+
+5、如何才能取到没有在.h文件中声明，但在.m文件中实现的方法
+   使用方法performSelector可以获取到此种情况的方法。
