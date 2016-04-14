@@ -80,6 +80,10 @@
     aPerson.db_age = 18;
     aPerson.db_sex = @"男";
     aPerson.db_name = @"马云";
+    // 使用指针获取类变量
+    aPerson->_db_sss = @"asd";
+//    aPerson->privateFav = @"asd";
+    [aPerson performSelector:@selector(aaaaaa)];
     
     DBObject *copiedPerson = [aPerson copy];
     NSLog(@"copiedPerson:\n%@",copiedPerson.db_name);

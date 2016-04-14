@@ -8,7 +8,13 @@
 
 #import "DBObject.h"
 
-@interface DBObject ()
+@interface DBObject (){
+    
+}
+
+@property (nonatomic, strong) NSString *privateFav;
+
+- (void)aaaaaa;
 
 @end
 
@@ -30,6 +36,11 @@
     newObject.db_sex = self.db_sex;
     newObject.db_age = self.db_age;
     return newObject;
+}
+
+
+- (void)aaaaaa{
+    NSLog(@"%s",__FUNCTION__);
 }
 
 @end

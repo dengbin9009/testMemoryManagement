@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface DBObject : NSObject <NSCopying>
+@interface DBObject : NSObject <NSCopying>{
+//@private
+@public
+NSString *_db_sss;
+}
 
 @property (nonatomic, copy) NSString *db_name;
 @property (nonatomic, copy) NSString *db_sex;
