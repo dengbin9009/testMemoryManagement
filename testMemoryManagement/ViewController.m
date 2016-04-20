@@ -29,6 +29,7 @@
     [self categorySomeMethName];
     [self autoReleasePool];
     [self cacheNumber];
+    [self testBlock];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -136,6 +137,18 @@
     number = [NSNumber numberWithInt:100999999];
     another = [NSNumber numberWithInt:100999999];
     NSLog(@"%p %p", number, another);
+}
+
+- (void)testBlock{
+    __block NSInteger multiplier = 0;
+    NSInteger (^oneBlock)(NSInteger num) = ^(NSInteger num){
+        multiplier += 1;
+        NSLog(@"block:%ld",(long)multiplier);
+        return num*multiplier;
+    };
+    multiplier = 2;
+    NSLog(@"%ld",(long)oneBlock(2));
+    NSLog(@"over");
 }
 
 - (void)didReceiveMemoryWarning {
