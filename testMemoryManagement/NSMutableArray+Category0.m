@@ -15,4 +15,8 @@
     [self addObject:obj];
 }
 
+- (void)addObject:(id)anObject{
+    NSLog(@"addObject：%@",anObject);
+}
+
 @end

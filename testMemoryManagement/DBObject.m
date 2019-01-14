@@ -26,6 +26,10 @@ static NSArray *arr;
 
 @implementation DBObject
 
++ (void)load{
+    NSLog(@"DBObject+load");
+}
+
 - (instancetype)init
 {
     self = [super init];
@@ -71,5 +75,11 @@ static NSArray *arr;
 - (void)aaaaaa{
     NSLog(@"%s",__FUNCTION__);
 }
+
+- (void)aaaaaa3{
+    NSLog(@"DBObject+aaaaaa3");
+    NSLog(@"%s",__FUNCTION__);
+}
+
 
 @end

@@ -19,6 +19,7 @@
 		D3DB8CC71CBF641B00A482FC /* NSMutableArray+Category3.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DB8CC61CBF641B00A482FC /* NSMutableArray+Category3.m */; };
 		D3DB8CCA1CBF642200A482FC /* NSMutableArray+Dengbin.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DB8CC91CBF642200A482FC /* NSMutableArray+Dengbin.m */; };
 		D3DB8CD01CBF644200A482FC /* NSMutableArray+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DB8CCF1CBF644200A482FC /* NSMutableArray+Category1.m */; };
+		F722199021EC9ECF00685DE8 /* DBObject+Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = F722198F21EC9ECF00685DE8 /* DBObject+Sequence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		D3DB8CC91CBF642200A482FC /* NSMutableArray+Dengbin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Dengbin.m"; sourceTree = "<group>"; };
 		D3DB8CCE1CBF644200A482FC /* NSMutableArray+Category1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Category1.h"; sourceTree = "<group>"; };
 		D3DB8CCF1CBF644200A482FC /* NSMutableArray+Category1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Category1.m"; sourceTree = "<group>"; };
+		F722198E21EC9ECF00685DE8 /* DBObject+Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBObject+Sequence.h"; sourceTree = "<group>"; };
+		F722198F21EC9ECF00685DE8 /* DBObject+Sequence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DBObject+Sequence.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				D395DC931CAA332F00918C1A /* ViewController.m */,
 				D395DCA31CAA5D5100918C1A /* DBObject.h */,
 				D395DCA41CAA5D5100918C1A /* DBObject.m */,
+				F722198E21EC9ECF00685DE8 /* DBObject+Sequence.h */,
+				F722198F21EC9ECF00685DE8 /* DBObject+Sequence.m */,
 				D3DB8CB31CBF63E900A482FC /* NSMutableArray+Category0.h */,
 				D3DB8CB41CBF63E900A482FC /* NSMutableArray+Category0.m */,
 				D3DB8CCE1CBF644200A482FC /* NSMutableArray+Category1.h */,
@@ -188,6 +193,7 @@
 				D3DB8CCA1CBF642200A482FC /* NSMutableArray+Dengbin.m in Sources */,
 				D395DCA51CAA5D5100918C1A /* DBObject.m in Sources */,
 				D395DC8E1CAA332F00918C1A /* main.m in Sources */,
+				F722199021EC9ECF00685DE8 /* DBObject+Sequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,17 @@
     [self autoReleasePool];
     [self cacheNumber];
     [self testBlock];
+    [self testCategorySequence];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)testCategorySequence {
+    DBObject *aPerson = [[DBObject alloc]init];
+    [aPerson aaaaaa3];
+
+    NSMutableArray *array1 = [[NSMutableArray alloc]initWithArray:@[@"1",@"2"]];
+    [array1 addObject:@"3"];
+    NSLog(@"%@",array1);
 }
 
 

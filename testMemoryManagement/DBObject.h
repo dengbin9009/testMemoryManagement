@@ -22,4 +22,5 @@ NSString *_db_sss;
 
 + (NSInteger)getCount;
 
+- (void)aaaaaa3;
 @end
